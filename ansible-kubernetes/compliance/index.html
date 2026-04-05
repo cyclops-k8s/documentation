@@ -10,25 +10,31 @@
       
       
       
+        <link rel="canonical" href="https://cyclops-k8s.github.io/documentation/ansible-kubernetes/compliance/">
       
+      
+        <link rel="prev" href="../recovery/">
+      
+      
+        <link rel="next" href="../testing/">
       
       
         
       
       
-      <link rel="icon" href="/documentation/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Cyclops Documentation</title>
+        <title>CIS & STIG Compliance - Cyclops Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/documentation/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/documentation/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("/documentation/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cis-stig-compliance" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href="../.." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              CIS & STIG Compliance
             
           </span>
         </div>
@@ -214,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -231,11 +242,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/documentation/ansible-kubernetes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -253,7 +266,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-tabs__link">
+      <a href="../../ansible-kubernetes-devcontainer/" class="md-tabs__link">
         
   
   
@@ -272,7 +285,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/build-agent-image/" class="md-tabs__link">
+      <a href="../../build-agent-image/" class="md-tabs__link">
         
   
   
@@ -291,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-tabs__link">
+      <a href="../../cyclops-assets-k8s/" class="md-tabs__link">
         
   
   
@@ -310,7 +323,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-tabs__link">
+      <a href="../../radosgw-usage-exporter/" class="md-tabs__link">
         
   
   
@@ -329,7 +342,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/squid-container/" class="md-tabs__link">
+      <a href="../../squid-container/" class="md-tabs__link">
         
   
   
@@ -348,7 +361,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/swiss-army-knife/" class="md-tabs__link">
+      <a href="../../swiss-army-knife/" class="md-tabs__link">
         
   
   
@@ -367,7 +380,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/multicluster-ingress/" class="md-tabs__link">
+      <a href="../../multicluster-ingress/" class="md-tabs__link">
         
   
   
@@ -402,7 +415,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href="../.." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -432,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -456,26 +469,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -493,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -511,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -539,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -567,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   
@@ -595,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/roles/" class="md-nav__link">
+      <a href="../roles/" class="md-nav__link">
         
   
   
@@ -623,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/hooks/" class="md-nav__link">
+      <a href="../hooks/" class="md-nav__link">
         
   
   
@@ -651,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/upgrading/" class="md-nav__link">
+      <a href="../upgrading/" class="md-nav__link">
         
   
   
@@ -679,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/recovery/" class="md-nav__link">
+      <a href="../recovery/" class="md-nav__link">
         
   
   
@@ -704,10 +722,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/compliance/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CIS & STIG Compliance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -723,6 +768,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cis-benchmark-112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CIS Benchmark 1.12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CIS Benchmark 1.12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-plane-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Plane Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worker-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worker Nodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items-requiring-manual-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Items Requiring Manual Action
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dod-stig-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOD STIG Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DOD STIG Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-stig-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key STIG Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stig-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STIG Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption-at-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption at Rest
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -735,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/testing/" class="md-nav__link">
+      <a href="../testing/" class="md-nav__link">
         
   
   
@@ -770,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-nav__link">
+      <a href="../../ansible-kubernetes-devcontainer/" class="md-nav__link">
         
   
   
@@ -797,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/build-agent-image/" class="md-nav__link">
+      <a href="../../build-agent-image/" class="md-nav__link">
         
   
   
@@ -824,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-nav__link">
+      <a href="../../cyclops-assets-k8s/" class="md-nav__link">
         
   
   
@@ -851,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-nav__link">
+      <a href="../../radosgw-usage-exporter/" class="md-nav__link">
         
   
   
@@ -878,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/squid-container/" class="md-nav__link">
+      <a href="../../squid-container/" class="md-nav__link">
         
   
   
@@ -905,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/swiss-army-knife/" class="md-nav__link">
+      <a href="../../swiss-army-knife/" class="md-nav__link">
         
   
   
@@ -932,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/multicluster-ingress/" class="md-nav__link">
+      <a href="../../multicluster-ingress/" class="md-nav__link">
         
   
   
@@ -969,6 +1134,116 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cis-benchmark-112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CIS Benchmark 1.12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CIS Benchmark 1.12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-plane-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Plane Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worker-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worker Nodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items-requiring-manual-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Items Requiring Manual Action
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dod-stig-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOD STIG Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DOD STIG Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-stig-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key STIG Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stig-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STIG Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption-at-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption at Rest
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -981,8 +1256,261 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="cis-stig-compliance">CIS &amp; STIG Compliance<a class="headerlink" href="#cis-stig-compliance" title="Permanent link">&para;</a></h1>
+<p>The ansible-kubernetes playbook is hardened against two security frameworks:</p>
+<ul>
+<li><strong>CIS Kubernetes Benchmark 1.12</strong></li>
+<li><strong>DOD STIG Kubernetes V2 Release 1</strong> (24 July 2024)</li>
+</ul>
+<h2 id="cis-benchmark-112">CIS Benchmark 1.12<a class="headerlink" href="#cis-benchmark-112" title="Permanent link">&para;</a></h2>
+<p>Most CIS benchmarks are handled automatically by kubeadm and the playbook. The playbook addresses additional items through configuration and post-installation hardening.</p>
+<h3 id="control-plane-components">Control Plane Components<a class="headerlink" href="#control-plane-components" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>CIS ID</th>
+<th>Description</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1.12</td>
+<td>Etcd data directory ownership set to etcd:etcd</td>
+<td>✅ Automated</td>
+<td>Init container sets ownership (UID/GID 500)</td>
+</tr>
+<tr>
+<td>1.2.6</td>
+<td>Authorization mode not set to AlwaysAllow</td>
+<td>✅ Automated</td>
+<td>Node + RBAC configured</td>
+</tr>
+<tr>
+<td>1.2.7</td>
+<td>Authorization mode includes Node</td>
+<td>✅ Automated</td>
+<td></td>
+</tr>
+<tr>
+<td>1.2.8</td>
+<td>Authorization mode includes RBAC</td>
+<td>✅ Automated</td>
+<td></td>
+</tr>
+<tr>
+<td>1.2.11</td>
+<td>AlwaysPullImages admission plugin</td>
+<td>✅ Automated</td>
+<td>Enabled by default</td>
+</tr>
+<tr>
+<td>1.2.14</td>
+<td>NodeRestriction admission plugin</td>
+<td>✅ Automated</td>
+<td>Included by default</td>
+</tr>
+<tr>
+<td>1.2.15</td>
+<td>Profiling disabled</td>
+<td>✅ Automated</td>
+<td><code>kubernetes_profiling: false</code></td>
+</tr>
+<tr>
+<td>1.2.16</td>
+<td>Audit log path set</td>
+<td>✅ Automated</td>
+<td><code>/var/log/apiserver/audit.log</code></td>
+</tr>
+<tr>
+<td>1.2.17</td>
+<td>Audit log max age ≥ 30</td>
+<td>✅ Automated</td>
+<td>30 days</td>
+</tr>
+<tr>
+<td>1.2.18</td>
+<td>Audit log max backup ≥ 10</td>
+<td>✅ Automated</td>
+<td>10 backups</td>
+</tr>
+<tr>
+<td>1.2.19</td>
+<td>Audit log max size ≥ 100</td>
+<td>✅ Automated</td>
+<td>100 MB</td>
+</tr>
+<tr>
+<td>1.2.30</td>
+<td>Service account token expiration not extended</td>
+<td>✅ Automated</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>1.3.1</td>
+<td>Terminated pod GC threshold set</td>
+<td>✅ Automated</td>
+<td>10</td>
+</tr>
+<tr>
+<td>1.3.2</td>
+<td>Profiling disabled (controller manager)</td>
+<td>✅ Automated</td>
+<td></td>
+</tr>
+<tr>
+<td>1.4.1</td>
+<td>Profiling disabled (scheduler)</td>
+<td>✅ Automated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="worker-nodes">Worker Nodes<a class="headerlink" href="#worker-nodes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>CIS ID</th>
+<th>Description</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.2.5</td>
+<td>Streaming connection idle timeout not 0</td>
+<td>✅ Automated</td>
+<td>5 minutes</td>
+</tr>
+<tr>
+<td>4.2.12</td>
+<td>Strong cryptographic ciphers only</td>
+<td>✅ Automated</td>
+<td>See <a href="../configuration/#tls-cipher-suites">TLS Cipher Suites</a></td>
+</tr>
+<tr>
+<td>4.2.13</td>
+<td>Pod PID limit set</td>
+<td>✅ Automated</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>4.2.14</td>
+<td>Seccomp enabled by default</td>
+<td>✅ Automated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="items-requiring-manual-action">Items Requiring Manual Action<a class="headerlink" href="#items-requiring-manual-action" title="Permanent link">&para;</a></h3>
+<p>Some CIS items cannot be fully automated and require administrator attention during cluster operation:</p>
+<ul>
+<li><strong>Default service account</strong> — ensure workloads do not use the <code>default</code> service account with auto-mounted tokens</li>
+<li><strong>Network policies</strong> — must be defined per-namespace by the administrator</li>
+<li><strong>RBAC policies</strong> — must be configured per-application</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Anonymous Auth (CIS 1.2.1)</p>
+<p>Anonymous authentication is left enabled because it is required for nodes to join the cluster via kubeadm. RBAC restricts what the anonymous user can access.</p>
+</div>
+<h2 id="dod-stig-compliance">DOD STIG Compliance<a class="headerlink" href="#dod-stig-compliance" title="Permanent link">&para;</a></h2>
+<p>The Kubernetes STIG Version 2 Release 1 (24 July 2024) has been applied. A STIG Viewer checklist file (<code>Stig checklist - Kubernetes.cklb</code>) is included in the repository.</p>
+<h3 id="key-stig-controls">Key STIG Controls<a class="headerlink" href="#key-stig-controls" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>STIG ID</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V-242382</td>
+<td>Authorization mode configured</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242402</td>
+<td>Audit logging enabled</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242409</td>
+<td>Profiling disabled</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242418</td>
+<td>Strong cipher suites</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242462</td>
+<td>Audit log size limit</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242463</td>
+<td>Audit log backup count</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242464</td>
+<td>Audit log retention</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-242465</td>
+<td>Audit log path configured</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-245541</td>
+<td>Streaming connection timeout</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>V-254800</td>
+<td>Pod Security admission configured</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stig-viewer">STIG Viewer<a class="headerlink" href="#stig-viewer" title="Permanent link">&para;</a></h3>
+<p>The DOD STIG Viewer is available at: <a href="https://public.cyber.mil/stigs/srg-stig-tools/">https://public.cyber.mil/stigs/srg-stig-tools/</a></p>
+<p>Use it to open the <code>Stig checklist - Kubernetes.cklb</code> file included in the repository to review the full compliance status.</p>
+<h2 id="encryption-at-rest">Encryption at Rest<a class="headerlink" href="#encryption-at-rest" title="Permanent link">&para;</a></h2>
+<p>Etcd data is encrypted at rest using <strong>AES-GCM</strong> with a 32-byte key. The playbook:</p>
+<ol>
+<li>Templates the encryption provider configuration</li>
+<li>Configures the API server with <code>--encryption-provider-config</code></li>
+<li>Enables automatic reload of the encryption configuration</li>
+<li>Verifies encryption after cluster creation by writing and reading a test secret</li>
+</ol>
+<p>See <a href="../configuration/#encryption-at-rest">Configuration Reference — Encryption at Rest</a> for key rotation procedures.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1025,10 +1553,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/documentation/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/documentation/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/documentation/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

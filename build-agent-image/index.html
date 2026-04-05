@@ -10,25 +10,31 @@
       
       
       
+        <link rel="canonical" href="https://cyclops-k8s.github.io/documentation/build-agent-image/">
       
+      
+        <link rel="prev" href="../ansible-kubernetes-devcontainer/">
+      
+      
+        <link rel="next" href="../cyclops-assets-k8s/">
       
       
         
       
       
-      <link rel="icon" href="/documentation/assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Cyclops Documentation</title>
+        <title>Build Agent Image - Cyclops Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/documentation/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/documentation/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("/documentation/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#build-agent-image" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href=".." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Build Agent Image
             
           </span>
         </div>
@@ -214,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -235,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/documentation/ansible-kubernetes/" class="md-tabs__link">
+        <a href="../ansible-kubernetes/" class="md-tabs__link">
           
   
   
@@ -253,7 +264,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-tabs__link">
+      <a href="../ansible-kubernetes-devcontainer/" class="md-tabs__link">
         
   
   
@@ -270,9 +281,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="/documentation/build-agent-image/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -291,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-tabs__link">
+      <a href="../cyclops-assets-k8s/" class="md-tabs__link">
         
   
   
@@ -310,7 +323,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-tabs__link">
+      <a href="../radosgw-usage-exporter/" class="md-tabs__link">
         
   
   
@@ -329,7 +342,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/squid-container/" class="md-tabs__link">
+      <a href="../squid-container/" class="md-tabs__link">
         
   
   
@@ -348,7 +361,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/swiss-army-knife/" class="md-tabs__link">
+      <a href="../swiss-army-knife/" class="md-tabs__link">
         
   
   
@@ -367,7 +380,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/multicluster-ingress/" class="md-tabs__link">
+      <a href="../multicluster-ingress/" class="md-tabs__link">
         
   
   
@@ -402,7 +415,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href=".." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -432,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -511,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/" class="md-nav__link">
+      <a href="../ansible-kubernetes/" class="md-nav__link">
         
   
   
@@ -539,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/getting-started/" class="md-nav__link">
+      <a href="../ansible-kubernetes/getting-started/" class="md-nav__link">
         
   
   
@@ -567,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/configuration/" class="md-nav__link">
+      <a href="../ansible-kubernetes/configuration/" class="md-nav__link">
         
   
   
@@ -595,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/roles/" class="md-nav__link">
+      <a href="../ansible-kubernetes/roles/" class="md-nav__link">
         
   
   
@@ -623,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/hooks/" class="md-nav__link">
+      <a href="../ansible-kubernetes/hooks/" class="md-nav__link">
         
   
   
@@ -651,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/upgrading/" class="md-nav__link">
+      <a href="../ansible-kubernetes/upgrading/" class="md-nav__link">
         
   
   
@@ -679,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/recovery/" class="md-nav__link">
+      <a href="../ansible-kubernetes/recovery/" class="md-nav__link">
         
   
   
@@ -707,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/compliance/" class="md-nav__link">
+      <a href="../ansible-kubernetes/compliance/" class="md-nav__link">
         
   
   
@@ -735,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/testing/" class="md-nav__link">
+      <a href="../ansible-kubernetes/testing/" class="md-nav__link">
         
   
   
@@ -770,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-nav__link">
+      <a href="../ansible-kubernetes-devcontainer/" class="md-nav__link">
         
   
   
@@ -794,10 +807,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/documentation/build-agent-image/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build Agent Image
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -813,6 +853,115 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#image-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installed-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installed Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installed Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kubernetes Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Container
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -824,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-nav__link">
+      <a href="../cyclops-assets-k8s/" class="md-nav__link">
         
   
   
@@ -851,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-nav__link">
+      <a href="../radosgw-usage-exporter/" class="md-nav__link">
         
   
   
@@ -878,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/squid-container/" class="md-nav__link">
+      <a href="../squid-container/" class="md-nav__link">
         
   
   
@@ -905,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/swiss-army-knife/" class="md-nav__link">
+      <a href="../swiss-army-knife/" class="md-nav__link">
         
   
   
@@ -932,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/multicluster-ingress/" class="md-nav__link">
+      <a href="../multicluster-ingress/" class="md-nav__link">
         
   
   
@@ -969,6 +1118,105 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#image-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installed-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installed Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installed Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kubernetes Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Container
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -981,8 +1229,103 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="build-agent-image">Build Agent Image<a class="headerlink" href="#build-agent-image" title="Permanent link">&para;</a></h1>
+<p>A custom GitHub Actions Runner Controller (ARC) image for CI/CD pipeline builds.</p>
+<p><strong>Registry</strong>: <code>quay.io/cyclops-k8s/build-agent-image</code></p>
+<h2 id="image-tags">Image Tags<a class="headerlink" href="#image-tags" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>latest</code></td>
+<td>Most recent build</td>
+</tr>
+<tr>
+<td><code>YYYY-MM-DD</code></td>
+<td>Date-tagged build</td>
+</tr>
+<tr>
+<td><code>YYYY-MM-DD-{sha}</code></td>
+<td>Date and commit SHA</td>
+</tr>
+</tbody>
+</table>
+<p>The image is rebuilt weekly (Sundays at 00:00 UTC) with automatic 30-day keepalive commits to ensure freshness.</p>
+<h2 id="installed-tools">Installed Tools<a class="headerlink" href="#installed-tools" title="Permanent link">&para;</a></h2>
+<p>Built on top of the official GitHub Actions Runner Controller image, with these additions:</p>
+<h3 id="system-packages">System Packages<a class="headerlink" href="#system-packages" title="Permanent link">&para;</a></h3>
+<ul>
+<li>bash, python3, curl, wget, jq, yq, pipx</li>
+</ul>
+<h3 id="kubernetes-tools">Kubernetes Tools<a class="headerlink" href="#kubernetes-tools" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kubectl</td>
+<td>Official Kubernetes install script</td>
+</tr>
+<tr>
+<td>kustomize</td>
+<td>Official hack script</td>
+</tr>
+<tr>
+<td>Helm v3</td>
+<td>Helm install script</td>
+</tr>
+<tr>
+<td>OpenTofu</td>
+<td>Official repository</td>
+</tr>
+</tbody>
+</table>
+<h3 id="automation">Automation<a class="headerlink" href="#automation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ansible (via pipx with <code>dnspython</code> injection)</li>
+</ul>
+<h2 id="development-container">Development Container<a class="headerlink" href="#development-container" title="Permanent link">&para;</a></h2>
+<p>The repository also includes a devcontainer configuration with:</p>
+<ul>
+<li>Docker-out-of-Docker (DooD) — shares the host Docker daemon</li>
+<li>Requires <code>/var/run/docker.sock</code> access</li>
+</ul>
+<h3 id="vs-code-extensions">VS Code Extensions<a class="headerlink" href="#vs-code-extensions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Docker</li>
+<li>GitHub Pull Requests</li>
+<li>GitHub Copilot</li>
+<li>GitHub Actions</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1025,10 +1368,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/documentation/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/documentation/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/documentation/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

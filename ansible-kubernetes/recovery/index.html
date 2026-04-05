@@ -10,25 +10,31 @@
       
       
       
+        <link rel="canonical" href="https://cyclops-k8s.github.io/documentation/ansible-kubernetes/recovery/">
       
+      
+        <link rel="prev" href="../upgrading/">
+      
+      
+        <link rel="next" href="../compliance/">
       
       
         
       
       
-      <link rel="icon" href="/documentation/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Cyclops Documentation</title>
+        <title>Recovery - Cyclops Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/documentation/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/documentation/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("/documentation/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#recovery" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href="../.." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Recovery
             
           </span>
         </div>
@@ -214,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -231,11 +242,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/documentation/ansible-kubernetes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -253,7 +266,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-tabs__link">
+      <a href="../../ansible-kubernetes-devcontainer/" class="md-tabs__link">
         
   
   
@@ -272,7 +285,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/build-agent-image/" class="md-tabs__link">
+      <a href="../../build-agent-image/" class="md-tabs__link">
         
   
   
@@ -291,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-tabs__link">
+      <a href="../../cyclops-assets-k8s/" class="md-tabs__link">
         
   
   
@@ -310,7 +323,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-tabs__link">
+      <a href="../../radosgw-usage-exporter/" class="md-tabs__link">
         
   
   
@@ -329,7 +342,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/squid-container/" class="md-tabs__link">
+      <a href="../../squid-container/" class="md-tabs__link">
         
   
   
@@ -348,7 +361,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/swiss-army-knife/" class="md-tabs__link">
+      <a href="../../swiss-army-knife/" class="md-tabs__link">
         
   
   
@@ -367,7 +380,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/multicluster-ingress/" class="md-tabs__link">
+      <a href="../../multicluster-ingress/" class="md-tabs__link">
         
   
   
@@ -402,7 +415,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href="../.." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -432,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -456,26 +469,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -493,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -511,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -539,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -567,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   
@@ -595,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/roles/" class="md-nav__link">
+      <a href="../roles/" class="md-nav__link">
         
   
   
@@ -623,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/hooks/" class="md-nav__link">
+      <a href="../hooks/" class="md-nav__link">
         
   
   
@@ -651,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/upgrading/" class="md-nav__link">
+      <a href="../upgrading/" class="md-nav__link">
         
   
   
@@ -676,10 +694,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/recovery/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -695,6 +740,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recovering-expired-kubelet-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovering Expired Kubelet Certificates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovering Expired Kubelet Certificates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symptoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symptoms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cluster Reset
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -707,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/compliance/" class="md-nav__link">
+      <a href="../compliance/" class="md-nav__link">
         
   
   
@@ -735,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/testing/" class="md-nav__link">
+      <a href="../testing/" class="md-nav__link">
         
   
   
@@ -770,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-nav__link">
+      <a href="../../ansible-kubernetes-devcontainer/" class="md-nav__link">
         
   
   
@@ -797,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/build-agent-image/" class="md-nav__link">
+      <a href="../../build-agent-image/" class="md-nav__link">
         
   
   
@@ -824,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-nav__link">
+      <a href="../../cyclops-assets-k8s/" class="md-nav__link">
         
   
   
@@ -851,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-nav__link">
+      <a href="../../radosgw-usage-exporter/" class="md-nav__link">
         
   
   
@@ -878,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/squid-container/" class="md-nav__link">
+      <a href="../../squid-container/" class="md-nav__link">
         
   
   
@@ -905,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/swiss-army-knife/" class="md-nav__link">
+      <a href="../../swiss-army-knife/" class="md-nav__link">
         
   
   
@@ -932,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/multicluster-ingress/" class="md-nav__link">
+      <a href="../../multicluster-ingress/" class="md-nav__link">
         
   
   
@@ -969,6 +1084,66 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recovering-expired-kubelet-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovering Expired Kubelet Certificates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovering Expired Kubelet Certificates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symptoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symptoms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cluster Reset
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -981,8 +1156,80 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="recovery">Recovery<a class="headerlink" href="#recovery" title="Permanent link">&para;</a></h1>
+<h2 id="recovering-expired-kubelet-certificates">Recovering Expired Kubelet Certificates<a class="headerlink" href="#recovering-expired-kubelet-certificates" title="Permanent link">&para;</a></h2>
+<p>If kubelet certificates expire and nodes can no longer communicate with the API server, use the <code>recover-expired-kubelet-certs.yaml</code> playbook.</p>
+<h3 id="symptoms">Symptoms<a class="headerlink" href="#symptoms" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>kubectl get nodes</code> shows nodes as <code>NotReady</code></li>
+<li>kubelet logs show certificate-related errors</li>
+<li><code>Unable to connect to the server: x509: certificate has expired</code></li>
+</ul>
+<h3 id="recovery-procedure">Recovery Procedure<a class="headerlink" href="#recovery-procedure" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventory<span class="w"> </span>recover-expired-kubelet-certs.yaml
+</code></pre></div>
+<p>The playbook:</p>
+<ol>
+<li>Generates a bootstrap token on the first control plane</li>
+<li>Retrieves the CA certificate from the cluster</li>
+<li>Creates a <code>bootstrap-kubelet.conf</code> file on each affected node with:<ul>
+<li>Bootstrap token for authentication</li>
+<li>Base64-encoded CA certificate</li>
+<li>API endpoint configuration</li>
+</ul>
+</li>
+<li>Restarts kubelet on each node</li>
+<li>Kubelet uses the bootstrap token to request new certificates via CSR signing</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Automatic Renewal</p>
+<p>The playbook configures a systemd timer for monthly certificate renewal (<code>kubernetes_manage_cert_renewal: true</code>). This should prevent certificate expiration under normal operation.</p>
+</div>
+<h2 id="cluster-reset">Cluster Reset<a class="headerlink" href="#cluster-reset" title="Permanent link">&para;</a></h2>
+<p>The <code>reset.yaml</code> playbook performs a complete cluster teardown:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventory<span class="w"> </span>reset.yaml
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This is destructive and irreversible. It will completely destroy the cluster.</p>
+</div>
+<p><strong>What it does:</strong></p>
+<ol>
+<li>Runs <code>kubeadm reset</code> on all nodes</li>
+<li>Stops systemd units (kubelet, containerd)</li>
+<li>Removes all containerd containers</li>
+<li>Uninstalls Kubernetes packages (<code>kubeadm</code>, <code>kubelet</code>, <code>kubectl</code>)</li>
+<li>Cleans up directories:<ul>
+<li><code>/etc/kubernetes</code></li>
+<li><code>/var/lib/etcd</code></li>
+<li><code>/etc/cni</code></li>
+<li><code>/var/lib/kubelet</code></li>
+<li><code>/var/lib/containerd</code></li>
+</ul>
+</li>
+<li>Removes the <code>etcd</code> user and group</li>
+<li>Optionally reboots nodes</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1025,10 +1272,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/documentation/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/documentation/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/documentation/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

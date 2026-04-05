@@ -10,25 +10,31 @@
       
       
       
+        <link rel="canonical" href="https://cyclops-k8s.github.io/documentation/ansible-kubernetes/upgrading/">
       
+      
+        <link rel="prev" href="../hooks/">
+      
+      
+        <link rel="next" href="../recovery/">
       
       
         
       
       
-      <link rel="icon" href="/documentation/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Cyclops Documentation</title>
+        <title>Upgrading - Cyclops Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/documentation/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/documentation/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("/documentation/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#upgrading" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href="../.." title="Cyclops Documentation" class="md-header__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Upgrading
             
           </span>
         </div>
@@ -214,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -231,11 +242,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/documentation/ansible-kubernetes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -253,7 +266,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-tabs__link">
+      <a href="../../ansible-kubernetes-devcontainer/" class="md-tabs__link">
         
   
   
@@ -272,7 +285,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/build-agent-image/" class="md-tabs__link">
+      <a href="../../build-agent-image/" class="md-tabs__link">
         
   
   
@@ -291,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-tabs__link">
+      <a href="../../cyclops-assets-k8s/" class="md-tabs__link">
         
   
   
@@ -310,7 +323,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-tabs__link">
+      <a href="../../radosgw-usage-exporter/" class="md-tabs__link">
         
   
   
@@ -329,7 +342,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/squid-container/" class="md-tabs__link">
+      <a href="../../squid-container/" class="md-tabs__link">
         
   
   
@@ -348,7 +361,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/swiss-army-knife/" class="md-tabs__link">
+      <a href="../../swiss-army-knife/" class="md-tabs__link">
         
   
   
@@ -367,7 +380,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/documentation/multicluster-ingress/" class="md-tabs__link">
+      <a href="../../multicluster-ingress/" class="md-tabs__link">
         
   
   
@@ -402,7 +415,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/documentation/." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
+    <a href="../.." title="Cyclops Documentation" class="md-nav__button md-logo" aria-label="Cyclops Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -432,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -456,26 +469,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -493,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -511,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -539,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -567,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/configuration/" class="md-nav__link">
+      <a href="../configuration/" class="md-nav__link">
         
   
   
@@ -595,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/roles/" class="md-nav__link">
+      <a href="../roles/" class="md-nav__link">
         
   
   
@@ -623,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/hooks/" class="md-nav__link">
+      <a href="../hooks/" class="md-nav__link">
         
   
   
@@ -648,10 +666,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/upgrading/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrading
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -667,6 +712,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running the Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrade Order
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrade Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-detect-etcd-leader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Detect Etcd Leader
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-control-plane-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Control Plane Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-worker-node-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Worker Node Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-post-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Post-Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etcd-wal-bug-workaround" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etcd WAL Bug Workaround
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Locking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrade Hooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -679,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/recovery/" class="md-nav__link">
+      <a href="../recovery/" class="md-nav__link">
         
   
   
@@ -707,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/compliance/" class="md-nav__link">
+      <a href="../compliance/" class="md-nav__link">
         
   
   
@@ -735,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes/testing/" class="md-nav__link">
+      <a href="../testing/" class="md-nav__link">
         
   
   
@@ -770,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/ansible-kubernetes-devcontainer/" class="md-nav__link">
+      <a href="../../ansible-kubernetes-devcontainer/" class="md-nav__link">
         
   
   
@@ -797,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/build-agent-image/" class="md-nav__link">
+      <a href="../../build-agent-image/" class="md-nav__link">
         
   
   
@@ -824,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/cyclops-assets-k8s/" class="md-nav__link">
+      <a href="../../cyclops-assets-k8s/" class="md-nav__link">
         
   
   
@@ -851,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/radosgw-usage-exporter/" class="md-nav__link">
+      <a href="../../radosgw-usage-exporter/" class="md-nav__link">
         
   
   
@@ -878,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/squid-container/" class="md-nav__link">
+      <a href="../../squid-container/" class="md-nav__link">
         
   
   
@@ -905,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/swiss-army-knife/" class="md-nav__link">
+      <a href="../../swiss-army-knife/" class="md-nav__link">
         
   
   
@@ -932,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/documentation/multicluster-ingress/" class="md-nav__link">
+      <a href="../../multicluster-ingress/" class="md-nav__link">
         
   
   
@@ -969,6 +1150,132 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running the Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrade Order
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrade Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-detect-etcd-leader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Detect Etcd Leader
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-control-plane-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Control Plane Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-worker-node-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Worker Node Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-post-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Post-Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etcd-wal-bug-workaround" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etcd WAL Bug Workaround
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Locking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrade Hooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -981,8 +1288,128 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="upgrading">Upgrading<a class="headerlink" href="#upgrading" title="Permanent link">&para;</a></h1>
+<p>The <code>upgrade.yaml</code> playbook performs a rolling upgrade of the Kubernetes cluster with zero downtime.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Update <code>kubernetes_version</code> in your configuration to the target minor version</li>
+<li>The target version must be in <code>kubernetes_supported_versions</code> (default: <code>["1.33", "1.34", "1.35"]</code>)</li>
+<li>Only single minor version jumps are supported (e.g. 1.33 → 1.34, not 1.33 → 1.35)</li>
+</ul>
+<h2 id="running-the-upgrade">Running the Upgrade<a class="headerlink" href="#running-the-upgrade" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventory<span class="w"> </span>upgrade.yaml
+</code></pre></div>
+<h2 id="upgrade-order">Upgrade Order<a class="headerlink" href="#upgrade-order" title="Permanent link">&para;</a></h2>
+<p>The playbook upgrades nodes in a carefully orchestrated order to maintain cluster availability:</p>
+<h3 id="1-detect-etcd-leader">1. Detect Etcd Leader<a class="headerlink" href="#1-detect-etcd-leader" title="Permanent link">&para;</a></h3>
+<p>The playbook queries the etcd cluster to identify the current leader. This ensures the leader is upgraded last to minimize disruption.</p>
+<h3 id="2-control-plane-upgrade">2. Control Plane Upgrade<a class="headerlink" href="#2-control-plane-upgrade" title="Permanent link">&para;</a></h3>
+<p>Control planes are upgraded <strong>one at a time</strong> in this order:</p>
+<ol>
+<li><strong>Etcd followers first</strong> — all non-leader control planes</li>
+<li><strong>Etcd leader last</strong> — the current leader node</li>
+</ol>
+<p>For each control plane:</p>
+<ol>
+<li>Execute <code>pre_upgrade_control_planes</code> hooks</li>
+<li>Update APT/RPM repositories to the new version</li>
+<li>Upgrade <code>kubeadm</code> package</li>
+<li>Run <code>kubeadm upgrade apply</code> (first node) or <code>kubeadm upgrade node</code> (subsequent nodes)</li>
+<li>Verify etcd health</li>
+<li>Verify API server health</li>
+<li>Upgrade <code>kubelet</code> and <code>kubectl</code> packages</li>
+<li>Restart kubelet</li>
+<li>Execute <code>post_upgrade_control_planes</code> hooks</li>
+</ol>
+<h3 id="3-worker-node-upgrade">3. Worker Node Upgrade<a class="headerlink" href="#3-worker-node-upgrade" title="Permanent link">&para;</a></h3>
+<p>For each worker node:</p>
+<ol>
+<li>Execute <code>pre_upgrade_workers</code> hooks</li>
+<li><strong>Drain the node</strong> — evicts all pods</li>
+<li>Upgrade <code>kubeadm</code>, <code>kubelet</code>, and <code>kubectl</code> packages</li>
+<li>Run <code>kubeadm upgrade node</code></li>
+<li>Restart kubelet</li>
+<li><strong>Uncordon the node</strong> — allows scheduling again</li>
+<li>Execute <code>post_upgrade_workers</code> hooks</li>
+</ol>
+<h3 id="4-post-upgrade">4. Post-Upgrade<a class="headerlink" href="#4-post-upgrade" title="Permanent link">&para;</a></h3>
+<p>After all nodes are upgraded:</p>
+<ol>
+<li>Execute <code>post_upgrade</code> hooks</li>
+<li>Verify cluster health</li>
+</ol>
+<h2 id="etcd-wal-bug-workaround">Etcd WAL Bug Workaround<a class="headerlink" href="#etcd-wal-bug-workaround" title="Permanent link">&para;</a></h2>
+<p>For etcd 3.6, the upgrade playbook includes a workaround for a membership consistency issue. It forces a Raft snapshot before certain upgrade operations to ensure the write-ahead log (WAL) is consistent across all etcd members.</p>
+<h2 id="version-locking">Version Locking<a class="headerlink" href="#version-locking" title="Permanent link">&para;</a></h2>
+<p>During the upgrade, package version locks are temporarily removed, the upgrade is performed, and then new version locks are applied to prevent accidental further upgrades:</p>
+<ul>
+<li><strong>Debian</strong>: <code>dpkg --set-selections</code> (hold/install)</li>
+<li><strong>RedHat</strong>: <code>dnf versionlock</code></li>
+</ul>
+<h2 id="upgrade-hooks">Upgrade Hooks<a class="headerlink" href="#upgrade-hooks" title="Permanent link">&para;</a></h2>
+<p>Use these hooks to run custom tasks during the upgrade:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">kubernetes_hookfiles</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">pre_upgrade_control_planes</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">inventory_dir</span><span class="nv"> </span><span class="s">}}/hooks/pre-upgrade-backup.yaml&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">post_upgrade</span><span class="p">:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">inventory_dir</span><span class="nv"> </span><span class="s">}}/hooks/post-upgrade-verify.yaml&quot;</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>When</th>
+<th>Use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pre_upgrade_control_planes</code></td>
+<td>Before any control plane upgrades</td>
+<td>Etcd snapshots, pre-flight checks</td>
+</tr>
+<tr>
+<td><code>post_upgrade_control_planes</code></td>
+<td>After control plane kubeadm upgrade</td>
+<td>Validation</td>
+</tr>
+<tr>
+<td><code>pre_upgrade_workers</code></td>
+<td>Before any worker upgrades</td>
+<td>Workload migration</td>
+</tr>
+<tr>
+<td><code>post_upgrade_workers</code></td>
+<td>After worker kubeadm upgrade</td>
+<td>Validation</td>
+</tr>
+<tr>
+<td><code>post_upgrade</code></td>
+<td>After all upgrades complete</td>
+<td>Smoke tests, notifications</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1025,10 +1452,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/documentation/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/documentation/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/documentation/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
