@@ -13,24 +13,55 @@ theme:
   - csharp
 
 nav:
-  - Home:
-    - Ansible Kubernetes:
-      - Overview: ansible-kubernetes/index.md
-      - Getting Started: ansible-kubernetes/getting-started.md
-      - Configuration Reference: ansible-kubernetes/configuration.md
-      - Roles: ansible-kubernetes/roles.md
-      - Hooks: ansible-kubernetes/hooks.md
-      - Upgrading: ansible-kubernetes/upgrading.md
-      - Recovery: ansible-kubernetes/recovery.md
-      - CIS & STIG Compliance: ansible-kubernetes/compliance.md
-      - Testing: ansible-kubernetes/testing.md
-    - Devcontainer: ansible-kubernetes-devcontainer/index.md
-    - Build Agent Image: build-agent-image/index.md
-    - Cyclops Assets K8s: cyclops-assets-k8s/index.md
-    - RadosGW Usage Exporter: radosgw-usage-exporter/index.md
-    - Squid Container: squid-container/index.md
-    - Swiss Army Knife: swiss-army-knife/index.md
-    - MultiCluster Ingress: multicluster-ingress/index.md
+  - Home: index.md
+  - Ansible Kubernetes:
+    - Overview: ansible-kubernetes/index.md
+    - Getting Started: ansible-kubernetes/getting-started.md
+    - Configuration Reference: ansible-kubernetes/configuration.md
+    - Roles: ansible-kubernetes/roles.md
+    - Hooks: ansible-kubernetes/hooks.md
+    - Example Hooks:
+      - Overview: ansible-kubernetes/example-hooks/index.md
+      - CNI:
+        - Cilium: ansible-kubernetes/example-hooks/cilium.md
+        - Calico: ansible-kubernetes/example-hooks/calico.md
+      - Cluster Components:
+        - ArgoCD: ansible-kubernetes/example-hooks/argocd.md
+        - Sealed Secrets: ansible-kubernetes/example-hooks/sealed-secrets.md
+        - Kube-VIP: ansible-kubernetes/example-hooks/kube-vip.md
+        - vSphere CPI: ansible-kubernetes/example-hooks/vsphere-cpi.md
+        - Kubelet CSR Approver: ansible-kubernetes/example-hooks/kubelet-csr-approver.md
+        - Etcd Backup: ansible-kubernetes/example-hooks/etcd-backup.md
+      - Tools:
+        - Helm: ansible-kubernetes/example-hooks/helm.md
+        - Kustomize: ansible-kubernetes/example-hooks/kustomize.md
+        - crun: ansible-kubernetes/example-hooks/crun.md
+      - Configuration:
+        - Admin Role Binding: ansible-kubernetes/example-hooks/admin-rolebinding.md
+        - Copy Admin Config: ansible-kubernetes/example-hooks/copy-admin-config.md
+        - Kubeconfig (Azure): ansible-kubernetes/example-hooks/local-kubeconfig-azure.md
+        - Kubeconfig (int128): ansible-kubernetes/example-hooks/local-kubeconfig-int128.md
+        - Containerd Config: ansible-kubernetes/example-hooks/containerd-config.md
+        - Registry Mirrors: ansible-kubernetes/example-hooks/registry-mirrors.md
+        - Proxy on Control Planes: ansible-kubernetes/example-hooks/proxy-on-control-planes.md
+    - Upgrading: ansible-kubernetes/upgrading.md
+    - Recovery: ansible-kubernetes/recovery.md
+    - CIS & STIG Compliance: ansible-kubernetes/compliance.md
+    - Testing: ansible-kubernetes/testing.md
+  - Devcontainer:
+    - Overview: ansible-kubernetes-devcontainer/index.md
+  - Build Agent Image:
+    - Overview: build-agent-image/index.md
+  - Cyclops Assets K8s:
+    - Overview: cyclops-assets-k8s/index.md
+  - RadosGW Usage Exporter:
+    - Overview: radosgw-usage-exporter/index.md
+  - Squid Container:
+    - Overview: squid-container/index.md
+  - Swiss Army Knife:
+    - Overview: swiss-army-knife/index.md
+  - MultiCluster Ingress:
+    - Overview: multicluster-ingress/index.md
 
 markdown_extensions:
   - pymdownx.highlight:
