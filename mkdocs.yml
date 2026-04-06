@@ -1,51 +1,36 @@
 site_name: Cyclops Documentation
 site_description: Documentation for all things Cyclops-k8s
-site_url: https://cyclops-k8s.github.io/documentation
-repo_url: https://github.com/cyclops-k8s/documentation
-repo_name: cyclops-k8s/documentation
+site_url: https://cyclops-k8s.io
+repo_url: https://github.com/cyclops-k8s
+repo_name: cyclops-k8s
 
 theme:
-  name: material
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+  name: readthedocs
+  hljs_languages:
+  - yaml
+  - bash
+  - python
+  - csharp
 
 nav:
-  - Home: index.md
-  - Ansible Kubernetes:
-    - Overview: ansible-kubernetes/index.md
-    - Getting Started: ansible-kubernetes/getting-started.md
-    - Configuration Reference: ansible-kubernetes/configuration.md
-    - Roles: ansible-kubernetes/roles.md
-    - Hooks: ansible-kubernetes/hooks.md
-    - Upgrading: ansible-kubernetes/upgrading.md
-    - Recovery: ansible-kubernetes/recovery.md
-    - CIS & STIG Compliance: ansible-kubernetes/compliance.md
-    - Testing: ansible-kubernetes/testing.md
-  - Devcontainer: ansible-kubernetes-devcontainer/index.md
-  - Build Agent Image: build-agent-image/index.md
-  - Cyclops Assets K8s: cyclops-assets-k8s/index.md
-  - RadosGW Usage Exporter: radosgw-usage-exporter/index.md
-  - Squid Container: squid-container/index.md
-  - Swiss Army Knife: swiss-army-knife/index.md
-  - MultiCluster Ingress: multicluster-ingress/index.md
+  - Home:
+    - Ansible Kubernetes:
+      - Overview: ansible-kubernetes/index.md
+      - Getting Started: ansible-kubernetes/getting-started.md
+      - Configuration Reference: ansible-kubernetes/configuration.md
+      - Roles: ansible-kubernetes/roles.md
+      - Hooks: ansible-kubernetes/hooks.md
+      - Upgrading: ansible-kubernetes/upgrading.md
+      - Recovery: ansible-kubernetes/recovery.md
+      - CIS & STIG Compliance: ansible-kubernetes/compliance.md
+      - Testing: ansible-kubernetes/testing.md
+    - Devcontainer: ansible-kubernetes-devcontainer/index.md
+    - Build Agent Image: build-agent-image/index.md
+    - Cyclops Assets K8s: cyclops-assets-k8s/index.md
+    - RadosGW Usage Exporter: radosgw-usage-exporter/index.md
+    - Squid Container: squid-container/index.md
+    - Swiss Army Knife: swiss-army-knife/index.md
+    - MultiCluster Ingress: multicluster-ingress/index.md
 
 markdown_extensions:
   - pymdownx.highlight:
