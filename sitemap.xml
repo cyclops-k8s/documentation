@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/compliance/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/compliance/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/configuration/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/configuration/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/getting-started/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/getting-started/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/hooks/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/hooks/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/recovery/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/recovery/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/roles/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/roles/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/testing/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/testing/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes/upgrading/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes/upgrading/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/ansible-kubernetes-devcontainer/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/ansible-kubernetes-devcontainer/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/build-agent-image/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/build-agent-image/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/cyclops-assets-k8s/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/cyclops-assets-k8s/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/multicluster-ingress/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/multicluster-ingress/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/radosgw-usage-exporter/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/radosgw-usage-exporter/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/squid-container/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/squid-container/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
     <url>
-         <loc>https://cyclops-k8s.github.io/documentation/swiss-army-knife/</loc>
-         <lastmod>2026-04-05</lastmod>
+         <loc>https://cyclops-k8s.io/swiss-army-knife/</loc>
+         <lastmod>2026-04-06</lastmod>
     </url>
 </urlset>
