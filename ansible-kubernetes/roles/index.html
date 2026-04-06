@@ -43,69 +43,148 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ansible Kubernetes</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" >Ansible Kubernetes</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration Reference</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Roles</a>
     <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../getting-started/">Getting Started</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../configuration/">Configuration Reference</a>
-                </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Roles</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#role-execution-order">Role Execution Order</a>
+    <li class="toctree-l2"><a class="reference internal" href="#role-execution-order">Role Execution Order</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#kubernetes-defaults">kubernetes-defaults</a>
+    <li class="toctree-l2"><a class="reference internal" href="#kubernetes-defaults">kubernetes-defaults</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#kubernetes-proxy">kubernetes-proxy</a>
+    <li class="toctree-l2"><a class="reference internal" href="#kubernetes-proxy">kubernetes-proxy</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#container-runtime">container-runtime</a>
+    <li class="toctree-l2"><a class="reference internal" href="#container-runtime">container-runtime</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#kubernetes">kubernetes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#kubernetes">kubernetes</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#kubernetes-control-plane">kubernetes-control-plane</a>
+    <li class="toctree-l2"><a class="reference internal" href="#kubernetes-control-plane">kubernetes-control-plane</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#first-control-plane">First Control Plane</a>
+    <li class="toctree-l3"><a class="reference internal" href="#first-control-plane">First Control Plane</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#secondary-control-planes">Secondary Control Planes</a>
+    <li class="toctree-l3"><a class="reference internal" href="#secondary-control-planes">Secondary Control Planes</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#kubernetes-worker">kubernetes-worker</a>
+    <li class="toctree-l2"><a class="reference internal" href="#kubernetes-worker">kubernetes-worker</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#post-kubernetes-finalization">post-kubernetes-finalization</a>
+    <li class="toctree-l2"><a class="reference internal" href="#post-kubernetes-finalization">post-kubernetes-finalization</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#pre-kubernetes-control-plane-post-kubernetes-control-plane-post-kubernetes-worker">pre-kubernetes-control-plane / post-kubernetes-control-plane / post-kubernetes-worker</a>
+    <li class="toctree-l2"><a class="reference internal" href="#pre-kubernetes-control-plane-post-kubernetes-control-plane-post-kubernetes-worker">pre-kubernetes-control-plane / post-kubernetes-control-plane / post-kubernetes-worker</a>
     </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../hooks/">Hooks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Example Hooks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../example-hooks/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../hooks/">Hooks</a>
+                <li class="toctree-l2"><a class="reference internal" >CNI</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/cilium/">Cilium</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../upgrading/">Upgrading</a>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/calico/">Calico</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../recovery/">Recovery</a>
+    </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../compliance/">CIS & STIG Compliance</a>
+                <li class="toctree-l2"><a class="reference internal" >Cluster Components</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/argocd/">ArgoCD</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../testing/">Testing</a>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/sealed-secrets/">Sealed Secrets</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/kube-vip/">Kube-VIP</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/vsphere-cpi/">vSphere CPI</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/kubelet-csr-approver/">Kubelet CSR Approver</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/etcd-backup/">Etcd Backup</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/helm/">Helm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/kustomize/">Kustomize</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/crun/">crun</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Configuration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/admin-rolebinding/">Admin Role Binding</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/copy-admin-config/">Copy Admin Config</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/local-kubeconfig-azure/">Kubeconfig (Azure)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/local-kubeconfig-int128/">Kubeconfig (int128)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/containerd-config/">Containerd Config</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/registry-mirrors/">Registry Mirrors</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/proxy-on-control-planes/">Proxy on Control Planes</a>
+                </li>
+    </ul>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../ansible-kubernetes-devcontainer/">Devcontainer</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../upgrading/">Upgrading</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../build-agent-image/">Build Agent Image</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../recovery/">Recovery</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../cyclops-assets-k8s/">Cyclops Assets K8s</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../compliance/">CIS & STIG Compliance</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../radosgw-usage-exporter/">RadosGW Usage Exporter</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../squid-container/">Squid Container</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Devcontainer</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ansible-kubernetes-devcontainer/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../swiss-army-knife/">Swiss Army Knife</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Agent Image</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../build-agent-image/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../multicluster-ingress/">MultiCluster Ingress</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Cyclops Assets K8s</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../cyclops-assets-k8s/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RadosGW Usage Exporter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../radosgw-usage-exporter/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Squid Container</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../squid-container/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Swiss Army Knife</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../swiss-army-knife/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MultiCluster Ingress</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../multicluster-ingress/">Overview</a>
                   </li>
               </ul>
       </div>
@@ -122,7 +201,6 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Home</li>
           <li class="breadcrumb-item">Ansible Kubernetes</li>
       <li class="breadcrumb-item active">Roles</li>
     <li class="wy-breadcrumbs-aside">

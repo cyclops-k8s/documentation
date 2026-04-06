@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cyclops-k8s.io/ansible-kubernetes/recovery/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cyclops-k8s.io/ansible-kubernetes/example-hooks/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Recovery - Cyclops Documentation</title>
+    <title>Overview - Cyclops Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Recovery";
-        var mkdocs_page_input_path = "ansible-kubernetes/recovery.md";
-        var mkdocs_page_url = "/ansible-kubernetes/recovery/";
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "ansible-kubernetes/example-hooks/index.md";
+        var mkdocs_page_url = "/ansible-kubernetes/example-hooks/";
       </script>
     
     <!--[if lt IE 9]>
@@ -59,59 +59,69 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../hooks/">Hooks</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Example Hooks</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../example-hooks/">Overview</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Example Hooks</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#cni-plugins">CNI Plugins</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cluster-components">Cluster Components</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tools">Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a>
+    </li>
+    </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >CNI</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/cilium/">Cilium</a>
+                <li class="toctree-l3"><a class="reference internal" href="cilium/">Cilium</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/calico/">Calico</a>
+                <li class="toctree-l3"><a class="reference internal" href="calico/">Calico</a>
                 </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Cluster Components</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/argocd/">ArgoCD</a>
+                <li class="toctree-l3"><a class="reference internal" href="argocd/">ArgoCD</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/sealed-secrets/">Sealed Secrets</a>
+                <li class="toctree-l3"><a class="reference internal" href="sealed-secrets/">Sealed Secrets</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/kube-vip/">Kube-VIP</a>
+                <li class="toctree-l3"><a class="reference internal" href="kube-vip/">Kube-VIP</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/vsphere-cpi/">vSphere CPI</a>
+                <li class="toctree-l3"><a class="reference internal" href="vsphere-cpi/">vSphere CPI</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/kubelet-csr-approver/">Kubelet CSR Approver</a>
+                <li class="toctree-l3"><a class="reference internal" href="kubelet-csr-approver/">Kubelet CSR Approver</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/etcd-backup/">Etcd Backup</a>
+                <li class="toctree-l3"><a class="reference internal" href="etcd-backup/">Etcd Backup</a>
                 </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Tools</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/helm/">Helm</a>
+                <li class="toctree-l3"><a class="reference internal" href="helm/">Helm</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/kustomize/">Kustomize</a>
+                <li class="toctree-l3"><a class="reference internal" href="kustomize/">Kustomize</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/crun/">crun</a>
+                <li class="toctree-l3"><a class="reference internal" href="crun/">crun</a>
                 </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Configuration</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/admin-rolebinding/">Admin Role Binding</a>
+                <li class="toctree-l3"><a class="reference internal" href="admin-rolebinding/">Admin Role Binding</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/copy-admin-config/">Copy Admin Config</a>
+                <li class="toctree-l3"><a class="reference internal" href="copy-admin-config/">Copy Admin Config</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/local-kubeconfig-azure/">Kubeconfig (Azure)</a>
+                <li class="toctree-l3"><a class="reference internal" href="local-kubeconfig-azure/">Kubeconfig (Azure)</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/local-kubeconfig-int128/">Kubeconfig (int128)</a>
+                <li class="toctree-l3"><a class="reference internal" href="local-kubeconfig-int128/">Kubeconfig (int128)</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/containerd-config/">Containerd Config</a>
+                <li class="toctree-l3"><a class="reference internal" href="containerd-config/">Containerd Config</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/registry-mirrors/">Registry Mirrors</a>
+                <li class="toctree-l3"><a class="reference internal" href="registry-mirrors/">Registry Mirrors</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../example-hooks/proxy-on-control-planes/">Proxy on Control Planes</a>
+                <li class="toctree-l3"><a class="reference internal" href="proxy-on-control-planes/">Proxy on Control Planes</a>
                 </li>
     </ul>
                 </li>
@@ -119,19 +129,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../upgrading/">Upgrading</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Recovery</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#recovering-expired-kubelet-certificates">Recovering Expired Kubelet Certificates</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#symptoms">Symptoms</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#recovery-procedure">Recovery Procedure</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#cluster-reset">Cluster Reset</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../recovery/">Recovery</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../compliance/">CIS & STIG Compliance</a>
                   </li>
@@ -188,9 +186,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Ansible Kubernetes</li>
-      <li class="breadcrumb-item active">Recovery</li>
+          <li class="breadcrumb-item">Example Hooks</li>
+      <li class="breadcrumb-item active">Overview</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/cyclops-k8s/edit/master/docs/ansible-kubernetes/recovery.md">Edit on cyclops-k8s</a>
+          <a href="https://github.com/cyclops-k8s/edit/master/docs/ansible-kubernetes/example-hooks/index.md">Edit on cyclops-k8s</a>
     </li>
   </ul>
   <hr/>
@@ -198,66 +197,156 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="recovery">Recovery<a class="headerlink" href="#recovery" title="Permanent link">&para;</a></h1>
-<h2 id="recovering-expired-kubelet-certificates">Recovering Expired Kubelet Certificates<a class="headerlink" href="#recovering-expired-kubelet-certificates" title="Permanent link">&para;</a></h2>
-<p>If kubelet certificates expire and nodes can no longer communicate with the API server, use the <code>recover-expired-kubelet-certs.yaml</code> playbook.</p>
-<h3 id="symptoms">Symptoms<a class="headerlink" href="#symptoms" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>kubectl get nodes</code> shows nodes as <code>NotReady</code></li>
-<li>kubelet logs show certificate-related errors</li>
-<li><code>Unable to connect to the server: x509: certificate has expired</code></li>
-</ul>
-<h3 id="recovery-procedure">Recovery Procedure<a class="headerlink" href="#recovery-procedure" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventory<span class="w"> </span>recover-expired-kubelet-certs.yaml
-</code></pre></div>
-<p>The playbook:</p>
-<ol>
-<li>Generates a bootstrap token on the first control plane</li>
-<li>Retrieves the CA certificate from the cluster</li>
-<li>Creates a <code>bootstrap-kubelet.conf</code> file on each affected node with:<ul>
-<li>Bootstrap token for authentication</li>
-<li>Base64-encoded CA certificate</li>
-<li>API endpoint configuration</li>
-</ul>
-</li>
-<li>Restarts kubelet on each node</li>
-<li>Kubelet uses the bootstrap token to request new certificates via CSR signing</li>
-</ol>
+                <h1 id="example-hooks">Example Hooks<a class="headerlink" href="#example-hooks" title="Permanent link">&para;</a></h1>
+<p>Ready-to-use hooks are provided in the <code>example-hooks/</code> directory. Each hook can be assigned to one or more lifecycle hook points via the <code>kubernetes_hookfiles</code> variable.</p>
 <div class="admonition note">
-<p class="admonition-title">Automatic Renewal</p>
-<p>The playbook configures a systemd timer for monthly certificate renewal (<code>kubernetes_manage_cert_renewal: true</code>). This should prevent certificate expiration under normal operation.</p>
+<p class="admonition-title">Note</p>
+<p>These hooks are intended for <strong>bootstrapping only</strong>. For ongoing management and version upgrades of cluster components, use GitOps tools like ArgoCD or Flux.</p>
 </div>
-<h2 id="cluster-reset">Cluster Reset<a class="headerlink" href="#cluster-reset" title="Permanent link">&para;</a></h2>
-<p>The <code>reset.yaml</code> playbook performs a complete cluster teardown:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventory<span class="w"> </span>reset.yaml
-</code></pre></div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>This is destructive and irreversible. It will completely destroy the cluster.</p>
-</div>
-<p><strong>What it does:</strong></p>
-<ol>
-<li>Runs <code>kubeadm reset</code> on all nodes</li>
-<li>Stops systemd units (kubelet, containerd)</li>
-<li>Removes all containerd containers</li>
-<li>Uninstalls Kubernetes packages (<code>kubeadm</code>, <code>kubelet</code>, <code>kubectl</code>)</li>
-<li>Cleans up directories:<ul>
-<li><code>/etc/kubernetes</code></li>
-<li><code>/var/lib/etcd</code></li>
-<li><code>/etc/cni</code></li>
-<li><code>/var/lib/kubelet</code></li>
-<li><code>/var/lib/containerd</code></li>
-</ul>
-</li>
-<li>Removes the <code>etcd</code> user and group</li>
-<li>Optionally reboots nodes</li>
-</ol>
+<h2 id="cni-plugins">CNI Plugins<a class="headerlink" href="#cni-plugins" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Hook Point</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cilium/">Cilium</a></td>
+<td><code>post_cluster_init</code></td>
+<td>Cilium CNI with kube-proxy replacement, WireGuard, Hubble, and BGP</td>
+</tr>
+<tr>
+<td><a href="calico/">Calico</a></td>
+<td><code>post_cluster_init</code></td>
+<td>Calico CNI from upstream manifest</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cluster-components">Cluster Components<a class="headerlink" href="#cluster-components" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Hook Point</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="argocd/">ArgoCD</a></td>
+<td><code>post_workers</code></td>
+<td>ArgoCD HA with Azure OIDC</td>
+</tr>
+<tr>
+<td><a href="sealed-secrets/">Sealed Secrets</a></td>
+<td><code>post_workers</code></td>
+<td>Bitnami Sealed Secrets controller</td>
+</tr>
+<tr>
+<td><a href="kube-vip/">Kube-VIP</a></td>
+<td><code>post_workers</code></td>
+<td>Virtual IP for LoadBalancer services</td>
+</tr>
+<tr>
+<td><a href="vsphere-cpi/">vSphere CPI</a></td>
+<td><code>post_cluster_init</code></td>
+<td>vSphere Cloud Provider Interface</td>
+</tr>
+<tr>
+<td><a href="kubelet-csr-approver/">Kubelet CSR Approver</a></td>
+<td><code>post_control_planes</code></td>
+<td>Automatic kubelet CSR approval</td>
+</tr>
+<tr>
+<td><a href="etcd-backup/">Etcd Backup</a></td>
+<td><code>post_control_planes</code></td>
+<td>Daily etcd snapshot CronJob</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Hook Points</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="helm/">Helm</a></td>
+<td><code>pre_configure_control_planes</code>, <code>pre_upgrade_control_planes</code></td>
+<td>Install/upgrade Helm CLI</td>
+</tr>
+<tr>
+<td><a href="kustomize/">Kustomize</a></td>
+<td><code>pre_configure_control_planes</code>, <code>pre_upgrade_control_planes</code></td>
+<td>Install/upgrade Kustomize CLI</td>
+</tr>
+<tr>
+<td><a href="crun/">crun</a></td>
+<td><code>pre_prerequisites</code>, <code>post_upgrade</code></td>
+<td>crun OCI runtime (replaces runc)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Hook Point</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="admin-rolebinding/">Admin Role Binding</a></td>
+<td><code>post_cluster_init</code></td>
+<td>OIDC admin ClusterRoleBinding</td>
+</tr>
+<tr>
+<td><a href="copy-admin-config/">Copy Admin Config</a></td>
+<td><code>post_cluster_init</code></td>
+<td>Copy kubeconfig locally</td>
+</tr>
+<tr>
+<td><a href="local-kubeconfig-azure/">Local Kubeconfig (Azure)</a></td>
+<td><code>post_control_planes</code></td>
+<td>Azure OIDC kubeconfig via kubelogin</td>
+</tr>
+<tr>
+<td><a href="local-kubeconfig-int128/">Local Kubeconfig (int128)</a></td>
+<td><code>post_control_planes</code></td>
+<td>Generic OIDC kubeconfig via kubelogin</td>
+</tr>
+<tr>
+<td><a href="containerd-config/">Containerd Config</a></td>
+<td><code>pre_prerequisites</code>, <code>post_upgrade</code></td>
+<td>CDI/KubeVirt containerd support</td>
+</tr>
+<tr>
+<td><a href="registry-mirrors/">Registry Mirrors</a></td>
+<td><code>post_proxies</code></td>
+<td>Container registry pull-through mirrors</td>
+</tr>
+<tr>
+<td><a href="proxy-on-control-planes/">Proxy on Control Planes</a></td>
+<td><code>pre_control_planes</code></td>
+<td>HAProxy + Keepalived on control planes</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../upgrading/" class="btn btn-neutral float-left" title="Upgrading"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../compliance/" class="btn btn-neutral float-right" title="CIS & STIG Compliance">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../hooks/" class="btn btn-neutral float-left" title="Hooks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="cilium/" class="btn btn-neutral float-right" title="Cilium">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -284,10 +373,10 @@
         </span>
     
     
-      <span><a href="../upgrading/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../hooks/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../compliance/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="cilium/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

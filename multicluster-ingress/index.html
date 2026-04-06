@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cyclops-k8s.io/multicluster-ingress/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>MultiCluster Ingress - Cyclops Documentation</title>
+    <title>Overview - Cyclops Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "MultiCluster Ingress";
+        var mkdocs_page_name = "Overview";
         var mkdocs_page_input_path = "multicluster-ingress/index.md";
         var mkdocs_page_url = "/multicluster-ingress/";
       </script>
@@ -43,43 +43,122 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Home</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" >Ansible Kubernetes</a>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ansible Kubernetes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/configuration/">Configuration Reference</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/roles/">Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/hooks/">Hooks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Example Hooks</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/">Overview</a>
+                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/example-hooks/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/getting-started/">Getting Started</a>
+                <li class="toctree-l2"><a class="reference internal" >CNI</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/cilium/">Cilium</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/configuration/">Configuration Reference</a>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/calico/">Calico</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/roles/">Roles</a>
+    </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/hooks/">Hooks</a>
+                <li class="toctree-l2"><a class="reference internal" >Cluster Components</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/argocd/">ArgoCD</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/upgrading/">Upgrading</a>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/sealed-secrets/">Sealed Secrets</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/recovery/">Recovery</a>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/kube-vip/">Kube-VIP</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/compliance/">CIS & STIG Compliance</a>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/vsphere-cpi/">vSphere CPI</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../ansible-kubernetes/testing/">Testing</a>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/kubelet-csr-approver/">Kubelet CSR Approver</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/etcd-backup/">Etcd Backup</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/helm/">Helm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/kustomize/">Kustomize</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/crun/">crun</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Configuration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/admin-rolebinding/">Admin Role Binding</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/copy-admin-config/">Copy Admin Config</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/local-kubeconfig-azure/">Kubeconfig (Azure)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/local-kubeconfig-int128/">Kubeconfig (int128)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/containerd-config/">Containerd Config</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/registry-mirrors/">Registry Mirrors</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../ansible-kubernetes/example-hooks/proxy-on-control-planes/">Proxy on Control Planes</a>
+                </li>
+    </ul>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes-devcontainer/">Devcontainer</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/upgrading/">Upgrading</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../build-agent-image/">Build Agent Image</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/recovery/">Recovery</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../cyclops-assets-k8s/">Cyclops Assets K8s</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/compliance/">CIS & STIG Compliance</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../radosgw-usage-exporter/">RadosGW Usage Exporter</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes/testing/">Testing</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../squid-container/">Squid Container</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Devcontainer</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ansible-kubernetes-devcontainer/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../swiss-army-knife/">Swiss Army Knife</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Agent Image</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../build-agent-image/">Overview</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">MultiCluster Ingress</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Cyclops Assets K8s</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cyclops-assets-k8s/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RadosGW Usage Exporter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../radosgw-usage-exporter/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Squid Container</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../squid-container/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Swiss Army Knife</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../swiss-army-knife/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MultiCluster Ingress</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
     </li>
@@ -132,8 +211,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Home</li>
-      <li class="breadcrumb-item active">MultiCluster Ingress</li>
+          <li class="breadcrumb-item">MultiCluster Ingress</li>
+      <li class="breadcrumb-item active">Overview</li>
     <li class="wy-breadcrumbs-aside">
           <a href="https://github.com/cyclops-k8s/edit/master/docs/multicluster-ingress/index.md">Edit on cyclops-k8s</a>
     </li>
@@ -390,7 +469,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../swiss-army-knife/" class="btn btn-neutral float-left" title="Swiss Army Knife"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../swiss-army-knife/" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>

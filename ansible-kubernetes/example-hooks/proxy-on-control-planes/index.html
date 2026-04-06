@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cyclops-k8s.io/ansible-kubernetes/example-hooks/proxy-on-control-planes/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Proxy on Control Planes - Cyclops Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Proxy on Control Planes";
+        var mkdocs_page_input_path = "ansible-kubernetes/example-hooks/proxy-on-control-planes.md";
+        var mkdocs_page_url = "/ansible-kubernetes/example-hooks/proxy-on-control-planes/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/csharp.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Cyclops Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ansible Kubernetes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../configuration/">Configuration Reference</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/">Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hooks/">Hooks</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Example Hooks</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >CNI</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../cilium/">Cilium</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../calico/">Calico</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Cluster Components</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../argocd/">ArgoCD</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../sealed-secrets/">Sealed Secrets</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../kube-vip/">Kube-VIP</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../vsphere-cpi/">vSphere CPI</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../kubelet-csr-approver/">Kubelet CSR Approver</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../etcd-backup/">Etcd Backup</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Tools</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../helm/">Helm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../kustomize/">Kustomize</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../crun/">crun</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Configuration</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../admin-rolebinding/">Admin Role Binding</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../copy-admin-config/">Copy Admin Config</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../local-kubeconfig-azure/">Kubeconfig (Azure)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../local-kubeconfig-int128/">Kubeconfig (int128)</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../containerd-config/">Containerd Config</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../registry-mirrors/">Registry Mirrors</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Proxy on Control Planes</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#variables">Variables</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#what-it-does">What It Does</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#haproxy-static-pod">HAProxy Static Pod</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../upgrading/">Upgrading</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../recovery/">Recovery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../compliance/">CIS & STIG Compliance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../testing/">Testing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Devcontainer</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../ansible-kubernetes-devcontainer/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Agent Image</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../build-agent-image/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Cyclops Assets K8s</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../cyclops-assets-k8s/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">RadosGW Usage Exporter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../radosgw-usage-exporter/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Squid Container</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../squid-container/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Swiss Army Knife</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../swiss-army-knife/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MultiCluster Ingress</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../multicluster-ingress/">Overview</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Cyclops Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Ansible Kubernetes</li>
+          <li class="breadcrumb-item">Example Hooks</li>
+          <li class="breadcrumb-item">Configuration</li>
+      <li class="breadcrumb-item active">Proxy on Control Planes</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/cyclops-k8s/edit/master/docs/ansible-kubernetes/example-hooks/proxy-on-control-planes.md">Edit on cyclops-k8s</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="proxy-on-control-planes">Proxy on Control Planes<a class="headerlink" href="#proxy-on-control-planes" title="Permanent link">&para;</a></h1>
+<p>Runs HAProxy and Keepalived directly on control plane nodes instead of dedicated proxy nodes. Eliminates the need for separate proxy infrastructure.</p>
+<p><strong>Hook point:</strong> <code>pre_control_planes</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">kubernetes_hookfiles</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">pre_control_planes</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/example-hooks/proxy-on-control-planes/pre_control_planes/proxy-on-control-planes.yaml</span>
+</code></pre></div>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Required</th>
+<th>Default</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vrrp_interface</code></td>
+<td>Yes</td>
+<td>(inherited)</td>
+<td>string</td>
+<td>Network interface for Keepalived VIP</td>
+</tr>
+<tr>
+<td><code>vrrp_password</code></td>
+<td>Yes</td>
+<td>(inherited)</td>
+<td>string</td>
+<td>VRRP authentication password</td>
+</tr>
+<tr>
+<td><code>vrrp_virtual_router_id</code></td>
+<td>Yes</td>
+<td>(inherited)</td>
+<td>int</td>
+<td>VRRP virtual router ID</td>
+</tr>
+<tr>
+<td><code>vrrp_state</code></td>
+<td>No</td>
+<td><code>BACKUP</code></td>
+<td>string</td>
+<td>Initial Keepalived state (<code>MASTER</code> or <code>BACKUP</code>)</td>
+</tr>
+<tr>
+<td><code>kubernetes_control_plane_ip</code></td>
+<td>Yes</td>
+<td>(inherited)</td>
+<td>IP</td>
+<td>Virtual IP address (bound as /24)</td>
+</tr>
+<tr>
+<td><code>kubernetes_proxy_port</code></td>
+<td>No</td>
+<td><code>6443</code></td>
+<td>int</td>
+<td>HAProxy listen port</td>
+</tr>
+<tr>
+<td><code>kubernetes_proxy_bind_address</code></td>
+<td>No</td>
+<td><code>""</code></td>
+<td>IP</td>
+<td>HAProxy bind address</td>
+</tr>
+<tr>
+<td><code>kubernetes_control_plane_check_interval</code></td>
+<td>No</td>
+<td><code>250ms</code></td>
+<td>duration</td>
+<td>Health check interval</td>
+</tr>
+<tr>
+<td><code>kubernetes_api_server_proxy_image</code></td>
+<td>No</td>
+<td><code>haproxy</code></td>
+<td>string</td>
+<td>HAProxy container image</td>
+</tr>
+<tr>
+<td><code>kubernetes_api_server_proxy_image_tag</code></td>
+<td>No</td>
+<td><code>lts</code></td>
+<td>string</td>
+<td>HAProxy image tag</td>
+</tr>
+<tr>
+<td><code>kubernetes_api_server_proxy_image_pull_policy</code></td>
+<td>No</td>
+<td><code>Always</code></td>
+<td>string</td>
+<td>Image pull policy</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-it-does">What It Does<a class="headerlink" href="#what-it-does" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Runs <code>pre_proxies</code> hooks (if defined)</li>
+<li>Validates required VRRP variables</li>
+<li>Deploys HAProxy as a static pod at <code>/etc/kubernetes/manifests/kube-apiserver-proxy.yaml</code></li>
+<li>Installs and configures Keepalived for VIP failover</li>
+<li>Sets <code>net.ipv4.ip_nonlocal_bind=1</code> sysctl</li>
+<li>Runs <code>post_proxies</code> hooks (if defined)</li>
+</ol>
+<h2 id="haproxy-static-pod">HAProxy Static Pod<a class="headerlink" href="#haproxy-static-pod" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>CPU:</strong> 250m request / 500m limit</li>
+<li><strong>Memory:</strong> 100Mi request / 200Mi limit</li>
+<li><strong>Health checks:</strong> <code>:1936/healthz</code> (liveness and readiness)</li>
+<li><strong>Stats:</strong> Enabled on <code>:1936</code></li>
+<li><strong>Backend:</strong> TCP mode load balancing to all control plane nodes, health checking <code>/readyz</code></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../registry-mirrors/" class="btn btn-neutral float-left" title="Registry Mirrors"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../upgrading/" class="btn btn-neutral float-right" title="Upgrading">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/cyclops-k8s" class="fa fa-code-fork" style="color: #fcfcfc"> cyclops-k8s</a>
+        </span>
+    
+    
+      <span><a href="../registry-mirrors/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../upgrading/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
